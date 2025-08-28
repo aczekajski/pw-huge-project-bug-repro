@@ -27,8 +27,11 @@ export default defineConfig({
   /* Configure projects for major browsers */
   projects: [
     {
-      name: 'chromium',
-      use: { ...devices['Desktop Chrome'] },
+      name: 'mobile',
+      use: {
+        ...devices['iPhone 12'],
+        viewport: { width: 375, height: 667 }
+      },
     },
   ],
 });
